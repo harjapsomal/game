@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="game.css" media="screen" />
+    <title>Game</title>
+  </head>
+
+  <p class="text1" id="Text1">
+    The rooms are shown visually on a 3x3 layout. As you move around (using the
+    navigation buttons), the current room is highlighted.<br />
+    One room is Heaven, another is Hell. Both are locked, and the keys are in
+    other rooms. If you find the room containing the key, you are informed that
+    you have the key. The key is placed in your pocket. Once you try to enter a
+    locked room, it now opens since you have the key in your possession. You WIN
+    the game by arriving in heaven. You LOSE the game by falling into hell.
+    Every time you play, the heaven/hell rooms are RANDOMLY assigned. The game
+    is designed to be played on a laptop only, not mobile devices. Good luck.
+  </p>
+
+  <div id="right">
+    <span id="Descrip"> description of room</span><br />
+    <p id="Descrip2"></p>
+  </div>
+  <!-- create the 9 rooms visually in html for user to see on website
+  each room (button) is assigned a separate class button0 ... button 8 -->
+
+  <body style="background-color: yellow" class="wrapper">
+    <div class="left">
+      <div class="buttons">
+        <button class="button8" id="Button8">ROOM 8</button>
+        <button class="button1" id="Button1">ROOM 1</button>
+        <button class="button2" id="Button2">ROOM 2</button>
+        <button class="button7" id="Button7">ROOM 7</button>
+        <button class="button0" id="Button0">ROOM 0</button>
+        <button class="button3" id="Button3">ROOM 3</button>
+        <button class="button6" id="Button6">ROOM 6</button>
+        <button class="button5" id="Button5">ROOM 5</button>
+        <button class="button4" id="Button4">ROOM 4</button>
+        <p class="locked" id="Locked"></p>
+      </div>
+
+      <!-- create the buttons to move in the 4 directions
+          this is the user input to move around the rooms
+          and it calls the relevant function to move -->
+
+      <div class="move" id="Move">
+        <button class="upButton" onclick="moveUp()">UP</button>
+        <button class="downButton" onclick="moveDown()">DOWN</button>
+        <button class="leftButton" onClick="moveLeft()">LEFT</button>
+        <button class="rightButton" onclick="moveRight()">RIGHT</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>

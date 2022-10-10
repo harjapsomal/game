@@ -1,0 +1,180 @@
+body {
+  border: 2px solid powderblue;
+  margin: 80px;
+  align-content: center;
+}
+
+/*  was going to be used for flex box - but decided against it for now
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+*/
+
+.text1 {
+  background-color: beige;
+  font-weight: 600;
+  font-family: sans-serif;
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  top: 20%;
+  left: 8%;
+}
+
+/* These buttons represent the 9 rooms and are laid out
+graphically to show the layout of the rooms, so player can
+navigate around them and visually see the layout as he moves
+the current room gets highlighted 
+*/
+
+/* container for all the buttons  */
+.buttons {
+  background-color: cornflowerblue;
+  width: 380px;
+  height: 310px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+.button {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+
+.button1 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button2 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button3 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button4 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button5 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button6 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+.button7 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+
+.button8 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+
+.button0 {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+}
+
+/* this is for the screen area that will tell the player the room is locked */
+
+.locked {
+  background-color: chartreuse;
+  font-weight: 600;
+  font-family: sans-serif;
+  width: 150px;
+  height: 90px;
+  position: fixed;
+  top: 30%;
+  left: 73%;
+}
+
+/* The navigation buttons to move around the rooms */
+.move {
+  background-color: azure;
+  width: 380px;
+  height: 150px;
+  position: relative;
+  /*  padding-left: 22%;
+  padding-right: 20%; */
+  text-align: center;
+  margin: auto;
+}
+
+.upButton {
+  background-color: chartreuse;
+  width: 80px;
+  height: 30px;
+  margin: 20px;
+  position: fixed;
+  left: 45%;
+  top: 70%;
+}
+
+.downButton {
+  background-color: chartreuse;
+  width: 80px;
+  height: 30px;
+  margin: 20px;
+  position: fixed;
+  left: 45%;
+  top: 80%;
+}
+
+.leftButton {
+  background-color: chartreuse;
+  width: 80px;
+  height: 30px;
+  margin: 20px;
+  position: fixed;
+  left: 38%;
+  top: 75%;
+}
+
+.rightButton {
+  background-color: chartreuse;
+  width: 80px;
+  height: 30px;
+  margin: 20px;
+  position: fixed;
+  left: 52%;
+  top: 75%;
+}
+
+#right {
+  font-size: larger;
+  font-weight: bolder;
+  background-color: bisque;
+  text-align: center;
+  position: relative;
+  padding-left: 0px;
+}
+
+.buttonActive {
+  background-color: pink;
+}
+
+/* used for highlighting the rooms using 'toggle' */
+.myStyle {
+  background-color: darkgray;
+}
+
+#myStyle1 {
+  background-color: blue;
+}
